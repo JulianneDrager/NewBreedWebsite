@@ -11,7 +11,7 @@ p{font-size: .5em; }
 
 /*page*/
 #page {
-  max-width: 1310px;
+  max-width: 1510px;
   margin: 0 auto;
   padding: 0; 
   position: relative;
@@ -194,7 +194,7 @@ button.contact:hover, button.contact:active {
 
 
 /*Learn Class section*/
-.learn {width: 100%; background-color: black;}
+.learn_section {width: 100%; background-color: black;}
 
 .yellow-line1 { background:url("images/home_images/line-ol-b.jpg")
                repeat-x top center; width: 100%; height: 12px;
@@ -691,18 +691,13 @@ and (min-width: 730px) {
 @media screen
 and (min-width: 1030px) {
 
-  .learn,
+  .learn_section,
   .video.one,
   .video.two,
-  .events,
-  .contact
+  .event_section,
+  .contact_section
    {
     display: none;
-  }
-
-  .footer {
-    background: none;
-    height: 330px;
   }
 
 /* this is the top smoke image */
@@ -715,20 +710,94 @@ and (min-width: 1030px) {
   display: none;
 }
 
+/* phedo class for top blue bar */
+header .header1-img:before {
+  content: "";
+  display: block;
+  background: url("images/top_bar.png") repeat-x;
+  height: 40px;
+  top: 0;
+}
+
+nav {
+  top:0;
+}
+
+nav ul li a {
+  color: #232227;
+}
+
+#page {
+  margin-top: 0;
+}
+
 /* this is the blue smoke image at bottom */
   .nb div.header1-img2 {
     max-width: 1916px;
     background-size: cover;
     background-repeat: no-repeat;
-    top: 494px;
+    top: 544px;
+    height: 383px;
   }
+
+  /* phedo class for bottom blue bar */
+  .footer-text:after {
+  content: "";
+  display: block;
+  background: url("images/bottom_bar.png") repeat-x center -7px;
+  height: 80px;
+  background-color: #4b5a7e;
+  margin-top: -31px;
+}
+
+.footer-text {
+  margin-left: 500px;
+  margin-top: 65px;
+  bottom: -20px;
+}
   
 /* this is the horse logo */
   h1::before {
+    background: transparent url("images/side_img.png") no-repeat center 4px;
     background-size: cover;
     width: 600px;
-    height: 689px;
+    height: 789px;
     left: 0px;
-    top: 200px;
+    top: 198px;
+    z-index: 1;
   }
+
+  /* this is the New Breed Title */
+  h1{
+    padding-right: 150px;
+    padding-top: 300px;
+    font-size: 5em;
+  }
+/* this is the container the buttons are held in */
+  .buttons {
+    right: 230px;
+    padding-top: 180px;
+    top: 325px;
+    max-width: 500px;
+    height: 100px;
+    border-top: #519c9f double 10px;
+    border-bottom: #519c9f double 10px;
+  }
+
+  button.learn,
+  button.events,
+  button.contact
+  {margin-left:22px;}
+
+  .social-links {
+    right: 278px;
+    top: 210px;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .footer {
+    background: none;
+    height: 330px;
+  }
+
 }
