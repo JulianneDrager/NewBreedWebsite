@@ -1,0 +1,456 @@
+/* main css */
+
+body {
+    font-family: Roboto;
+    background-color: #000;
+    color: #fff;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: .9em;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    font-size: .5em;
+}
+
+/*page*/
+
+#page {
+    max-width: 1510px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*logo in header logo*/
+
+header.section-home a.main-logo {
+    width: 61px;
+    background: url("images/home_images/logo/logo-screen.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 55px;
+    left: 20px;
+    top: 12px;
+    z-index: 1;
+}
+
+/*screen logo*/
+
+.small-logo {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* nav */
+
+nav {
+    position: relative;
+    padding: 70px 0 0 0;
+    background-color: rgba(12, 12, 12, 0.5);
+    height: 0px;
+    overflow: hidden;
+}
+
+nav a.mobile_menu {
+    width: 36px;
+    height: 32px;
+    background: url("images/home_images/mobile-icon.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -16px;
+    display: block;
+}
+
+nav ul {
+    list-style: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover {
+    background-color: transparent;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+/*targets ul's with sub navs to be shown on hover*/
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 5px 0 5px 10px;
+    text-decoration: none;
+    position: relative;
+    width: 90%;
+    margin: 10px 0 0 10px;
+}
+
+nav ul li a:visted {
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #4b5a7e;
+}
+
+nav ul ul {
+    background-color: rgba(12, 12, 12, 0.8);
+}
+
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul a {
+    margin-left: 30px;
+    width: 84%;
+}
+
+nav ul ul li a {
+    border-bottom: transparent inset .5px;
+}
+
+nav ul ul li a:hover {
+    border-bottom: white inset .5px;
+    transition: .9s;
+}
+
+a:hover.events_nav, a:hover.contact_nav, a:hover.learn_nav, a:hover.follow_nav {
+    background-color: transparent;
+    color: orange;
+    transition: .1s;
+}
+
+.contact_nav {
+    background-color: rgba(12, 12, 12, 0.5)
+}
+
+.section-title, section.learn, section.video.one, section.video.two, section.events, section.contact, footer {
+    width: 100%;
+    text-align: center;
+}
+
+/*this is the smoke img on the top*/
+
+header .header1-img {
+    width: 100%;
+    height: 400px;
+    background: url("images/home_images/home_back_1.jpg") repeat-x;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.video_block, .video_block2 {
+    display: block;
+    width: 95%;
+    min-height: 250px;
+    background-color: midnightblue;
+    border: 3px inset dodgerblue;
+}
+
+.video_block {
+    margin: -10px auto 25px auto;
+}
+
+.video_block2 {
+    margin: -10px auto 0 auto;
+}
+
+/*this is the bottom white smoke image*/
+
+.bottom_image {
+    width: 100%;
+    height: 540px;
+    background: url(images/class/video_body.jpg) repeat-x center 350px;
+    background-size: 150%;
+    position: absolute;
+    z-index: -2;
+    top: 305px;
+}
+
+/*h1 titile*/
+
+.section-title {
+    text-align: center;
+}
+
+/*Learn Class section*/
+
+.footer-text {
+    text-align: center;
+    margin: 50px 0 8px 0;
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 400px) {
+    .small-logo {
+        max-width: 418px;
+    }
+}
+
+@media screen and (min-width: 437px) and (max-width: 479px) {
+    header .header1-img {
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    #page {
+        margin-top: 30px;
+    }
+    header {
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+    header .header1-img {
+        background-size: cover;
+    }
+    .small-logo {
+        margin-top: -60px;
+    }
+    nav {
+        background-color: transparent;
+        position: absolute;
+        top: -33px;
+        right: 12px;
+        width: 480px;
+        overflow: visible;
+    }
+    nav a.mobile_menu {
+        display: none;
+    }
+    nav ul {
+        list-style: none;
+        margin: -80px 0 0 10px;
+        padding: 0;
+    }
+    nav ul li:hover {
+        background-color: transparent;
+    }
+    /*targets ul's with sub navs to be shown on hover*/
+    nav ul li:hover>ul {
+        display: block;
+    }
+    nav ul li a {
+        display: inline-block;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        width: 80px;
+        position: relative;
+        border: none;
+    }
+    nav ul li a:visted {
+        color: white;
+    }
+    nav ul ul {
+        position: absolute;
+        top: 162%;
+        display: none;
+        background-color: rgba(12, 12, 12, 0.8);
+    }
+    nav ul ul li {
+        position: relative;
+    }
+    nav ul ul li a {
+        margin-left: 2px;
+        border-bottom: transparent inset .5px;
+    }
+    nav ul ul li a:hover {
+        border-bottom: white inset .5px;
+        transition: .9s;
+    }
+    a:hover.events_nav, a:hover.contact_nav, a:hover.learn_nav, a:hover.follow_nav {
+        background-color: transparent;
+        color: orange;
+        transition: .9s;
+    }
+    .contact_nav {
+        background-color: transparent;
+    }
+    /*top level nav pointing to imediate parent*/
+    nav>ul {
+        padding-left: 15%;
+    }
+    nav>ul>li {
+        float: left;
+    }
+    nav>ul>li>a {
+        width: auto;
+        padding: 10px 8px;
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .bottom_image {
+        height: 640px;
+        background: url(images/class/video_body.jpg) repeat-x center 350px;
+        background-size: 150%;
+    }
+    .footer-text {
+        margin: 160px 0 8px 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .video_block, .video_block2 {
+        height: 320px;
+    }
+    header.section-home a.main-logo {
+        display: block;
+    }
+    .bottom_image {
+        height: 770px;
+        background: url(images/class/video_body.jpg) repeat-x center 320px;
+        background-size: 190%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    nav {
+        width: 380px;
+    }
+    
+}
+
+@media screen and (min-width: 730px) {
+    header .header1-img {
+        background: transparent url("images/top_back.jpg") repeat-x top;
+        background-size: contain;
+    }
+    .video_block, .video_block2 {
+        height: 400px;
+    }
+    .bottom_image {
+        height: 940px;
+        background: url(images/class/video_body.jpg) repeat-x center 420px;
+        background-size: 190%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* this is the top smoke image */
+    header .header1-img {
+        background-image: url("images/class/video_header.jpg");
+        background-size: cover;
+    }
+    /* this is SMALL horse logo in left corner */
+    header.section-home a.main-logo {
+        display: block;
+    }
+    /* phedo class for top blue bar */
+    header .header1-img:before {
+        content: "";
+        display: block;
+        background: url("images/top_bar.png") repeat-x;
+        height: 40px;
+        top: 0;
+    }
+    nav {
+        top: 0;
+    }
+    nav ul li a {
+        color: #607D8B;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    #page {
+        margin-top: 0;
+    }
+
+    .course_section {
+        height: 1000px;
+    }
+
+    .section-title {
+        padding-top: 10px;
+    }
+    
+    h4 {
+        font-size: 2em;
+    }
+    
+    .video_block, .video_block2 {
+        height: 600px;
+        display: none;
+    }
+    
+    .bottom_image {
+        height: 1600px;
+        background: url(images/class/video_body.jpg) repeat-x center 850px;
+        background-size: 190%;
+    }
+    
+    .footer-text {
+        padding: 12px;
+        background-color: black;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 1028px) {
+    h1 {
+        padding-right: 65px;
+        font-size: 3.5em;
+    }
+    .social-links {
+        right: 107px;
+    }
+    .buttons {
+        right: 80px;
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1320px) {
+    h1 {
+        padding-right: 48px;
+        padding-top: 280px;
+        font-size: 5em;
+    }
+    .buttons {
+        right: 140px;
+    }
+    .social-links {
+        right: 167px;
+    }
+}
