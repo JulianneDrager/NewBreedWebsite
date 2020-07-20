@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 nav ul li a:visted { color: white; }
-nav ul li a:hover { background-color: rgba(235,155,19, 0.8);}
+nav ul li a:hover { background-color: 4b5a7e;}
 
 nav ul ul { background-color: rgba(12,12,12,0.8);}
 nav ul ul li { position: relative; }
@@ -77,11 +77,11 @@ a:hover.follow_nav { background-color: transparent; color: orange; transition: .
 
 
 .section-title,
-section.learn,
+.learn_section,
 section.video.one,
 section.video.two,
-section.events,
-section.contact,
+.event_section,
+.contact_section,
 footer {width: 100%; text-align: center;}
 
 
@@ -282,7 +282,7 @@ button.contact:hover, button.contact:active {
 
 /*calander section one*/
 
-.events h2 { background-color: black; padding: 5px 10px; margin: -3px 0 40px 0; }
+.event_section h2 { background-color: black; padding: 5px 10px; margin: -3px 0 40px 0; }
 
 .chead { width: 100%; margin-top: -40px; }
 
@@ -449,7 +449,7 @@ button.contact:hover, button.contact:active {
 .last {position: absolute; left: 10px;}
 
 
-.contact { margin-top: 120px; position: relative;}
+.contact_section { margin-top: 120px; position: relative;}
 
 /*.contact::after {content:'';  width: 0;
     height: 0px; left: 45%; top: 370px;
@@ -724,7 +724,11 @@ nav {
 }
 
 nav ul li a {
-  color: #232227;
+  color: #607D8B;
+}
+
+nav ul li a:hover {
+  color: black;
 }
 
 #page {
@@ -799,5 +803,38 @@ nav ul li a {
     background: none;
     height: 330px;
   }
+
+}
+
+@media screen
+and (min-width: 1031px) {
+  h1 {
+    padding-right: 65px;
+    font-size: 3.5em;
+  }
+  .social-links {
+   right: 107px;
+}
+.buttons {
+  right: 80px;
+  width: 450px;
+}
+
+}
+
+@media screen 
+and (min-width: 1320px) {
+
+  h1 {
+    padding-right: 48px;
+    padding-top: 280px;
+    font-size: 5em;
+  }
+  .buttons {
+    right: 140px;
+  }
+  .social-links {
+    right: 167px;
+}
 
 }
