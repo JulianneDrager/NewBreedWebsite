@@ -8,7 +8,7 @@ body {
     padding: 0 0;
 }
 
-h1 {
+.title_1, .title_2 {
     font-size: 2.5em;
     font-weight: 500;
     margin: 2px 0 0 0;
@@ -25,6 +25,7 @@ h4 {
     font-size: .9em;
     font-weight: normal;
     text-align: center;
+    margin-top: 5px;
 }
 
 p {
@@ -162,11 +163,6 @@ a:hover.events_nav, a:hover.contact_nav, a:hover.learn_nav, a:hover.follow_nav {
     background-color: rgba(12, 12, 12, 0.5)
 }
 
-.section-title, section.learn, section.video.one, section.video.two, section.events, section.contact, footer {
-    width: 100%;
-    text-align: center;
-}
-
 /*this is the smoke img on the top*/
 
 header .header1-img {
@@ -178,20 +174,29 @@ header .header1-img {
     z-index: -1;
 }
 
+/* this is the horse image on left */
+
 .video_block, .video_block2 {
     display: block;
-    width: 95%;
-    min-height: 250px;
+    width: 85%;
+    min-height: 180px;
+    padding: 10px;
     background-color: midnightblue;
     border: 3px inset dodgerblue;
 }
 
 .video_block {
-    margin: -10px auto 25px auto;
+    margin: 5px auto 25px auto;
 }
 
 .video_block2 {
-    margin: -10px auto 0 auto;
+    margin: 5px auto 0 auto;
+}
+
+.img_container {
+    background-color: rgb(31, 31, 133);
+    width: 100%;
+    height: 280px;
 }
 
 /*this is the bottom white smoke image*/
@@ -208,8 +213,9 @@ header .header1-img {
 
 /*h1 titile*/
 
-.section-title {
+.title_1, .title_2 {
     text-align: center;
+    text-shadow: 1px 1px 8px black;
 }
 
 /*Learn Class section*/
@@ -220,10 +226,35 @@ header .header1-img {
     padding-top: 5px;
 }
 
+@media screen and (min-width: 320px) {
+    .bottom_image {
+        width: 100%;
+        height: 140px;
+        background: url(images/class/video_body.jpg) repeat-x left 0px;
+        background-size: 150%;
+        top: 845px;
+    }
+    .footer-text {
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .bottom_image {
+        width: 100%;
+        height: 100px;
+        background: url(images/class/video_body.jpg) repeat-x center -70px;
+        background-size: 150%;
+        top: 845px;
+    }
+
+}
+
 @media screen and (min-width: 400px) {
     .small-logo {
         max-width: 418px;
     }
+
 }
 
 @media screen and (min-width: 437px) and (max-width: 479px) {
@@ -319,13 +350,26 @@ header .header1-img {
         padding: 10px 8px;
         background-color: rgba(0, 0, 0, 0.0);
     }
+    .title_2:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 400px;
+        height: 790px;
+        background: url(images/class/class_hourse_background.png);
+        background-size: contain;
+        z-index: -1;
+    }
     .bottom_image {
-        height: 640px;
-        background: url(images/class/video_body.jpg) repeat-x center 350px;
+        height: 80px;
+        background: url(images/class/video_body.jpg) repeat-x center -130px;
         background-size: 150%;
     }
     .footer-text {
-        margin: 160px 0 8px 0;
+        margin: 20px 0 8px 0;
+        background-color: black;
+        padding-top: 5px;
     }
 }
 
@@ -337,8 +381,8 @@ header .header1-img {
         display: block;
     }
     .bottom_image {
-        height: 770px;
-        background: url(images/class/video_body.jpg) repeat-x center 320px;
+        height: 80px;
+        background: url("images/class/video_body.jpg") repeat-x center -260px;
         background-size: 190%;
     }
 }
@@ -347,7 +391,6 @@ header .header1-img {
     nav {
         width: 380px;
     }
-    
 }
 
 @media screen and (min-width: 730px) {
@@ -358,14 +401,85 @@ header .header1-img {
     .video_block, .video_block2 {
         height: 400px;
     }
+    .img_container {
+        height: 360px;
+    }
     .bottom_image {
-        height: 940px;
-        background: url(images/class/video_body.jpg) repeat-x center 420px;
+        height: 240px;
+        background: url("images/class/video_body.jpg") repeat-x center -180px;
         background-size: 190%;
+    }
+    .footer-text {
+        margin-top:20px;
+        padding: 5px 0;
+        background-color: black;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width:1024px) {
+    .title_2:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 1000px;
+        height: 490px;
+        background: url(images/class/class_hourse_background.png) no-repeat;
+        background-size: 1000px;
+        z-index: -1;
+    }
+    .course_section {
+        height: 740px;
+    }
+    .img_container {
+        height: 215px;
+    }
+    .video_block, .video_block2 {
+        max-height: 480px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .bottom_image {
+        height: 440px;
+        background: url("images/class/video_body.jpg") repeat-x center -410px;
+        background-size: 190%;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) {
+    .title_1, .title_2 {
+        font-size: 3.5em;
+        text-align: right;
+        padding-right: 200px;
+    }
+    .title_1, .title_2 {
+        text-shadow: 1px 1px 3px black;
+    }
+    .bottom_image {
+        height: 150px;
+        background: url(images/class/video_body.jpg) repeat-y center 420px;
+        background-size: cover;
+    }
+
+    .video_block, .video_block2 {
+        max-height: 280px;
+        max-width: 450px;
+        margin-right: 120px;
+    }
+    /* this is the horse image on left */
+    .title_2:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 800px;
+        height: 790px;
+        background: url(images/class/class_hourse_background.png);
+        background-size: contain;
+        z-index: -1;
+    }
     /* this is the top smoke image */
     header .header1-img {
         background-image: url("images/class/video_header.jpg");
@@ -373,7 +487,7 @@ header .header1-img {
     }
     /* this is SMALL horse logo in left corner */
     header.section-home a.main-logo {
-        display: block;
+        display: none;
     }
     /* phedo class for top blue bar */
     header .header1-img:before {
@@ -395,62 +509,31 @@ header .header1-img {
     #page {
         margin-top: 0;
     }
-
     .course_section {
-        height: 1000px;
+        height: 540px;
     }
-
-    .section-title {
-        padding-top: 10px;
-    }
-    
     h4 {
-        font-size: 2em;
+        font-size: 1em;
     }
-    
-    .video_block, .video_block2 {
-        height: 600px;
-        display: none;
-    }
-    
-    .bottom_image {
-        height: 1600px;
-        background: url(images/class/video_body.jpg) repeat-x center 850px;
-        background-size: 190%;
-    }
-    
     .footer-text {
-        padding: 12px;
+        padding: 5px 0;
         background-color: black;
-        margin: 0;
     }
 }
 
-
-@media screen and (min-width: 1028px) {
-    h1 {
-        padding-right: 65px;
-        font-size: 3.5em;
+@media screen and (min-width:1190px) {
+    .bottom_image {
+        margin-top: -220px;
+        height: 400px;
+        background: url(images/class/video_body.jpg) repeat-x center -200px;
+        background-size: 100%;
     }
-    .social-links {
-        right: 107px;
+    .footer-text {
+        padding: 5px 0;
+        background-color: black;
     }
-    .buttons {
-        right: 80px;
-        width: 450px;
-    }
-}
-
-@media screen and (min-width: 1320px) {
-    h1 {
-        padding-right: 48px;
-        padding-top: 280px;
-        font-size: 5em;
-    }
-    .buttons {
-        right: 140px;
-    }
-    .social-links {
-        right: 167px;
+    .title_1,
+    .title_2 {
+        padding-right: 220px;
     }
 }
