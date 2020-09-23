@@ -365,6 +365,11 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 
 /*video section one*/
 
+.videoTitle {
+  position: absolute;
+  z-index: 1;
+}
+
 .video1-img {
   background: url("images/course_images/vid-bac-1e.jpg") repeat-x top center;
   position: absolute;
@@ -378,9 +383,9 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
   height: 250px;
 }
 
-.emded1 {
+.embed1 {
   width: 89.5%;
-  height: 200px;
+  height: 20px;
   position: absolute;
   z-index: 2;
   left: 5%;
@@ -443,7 +448,7 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
   margin-top: 150px;
 }
 
-.emded2 {
+.embed2 {
   width: 89.5%;
   height: 200px;
   position: absolute;
@@ -820,26 +825,24 @@ option #course1a, option #course2a {
   font-size: 1em;
   background-color: rgba(222, 222, 222, 0.0);
   border: none;
-  padding: 4px 10px;
   border-radius: 2px;
-  margin: -20px 0 0 0;
-  transition: 3s;
   font-family: Oswald;
   font-weight: 600;
   font-size: 1.2em;
+  margin-top: -20px;
 }
 
 #sub:hover {
   color: #f5f1ed;
-  padding: 4px 10px;
   border-radius: 2px;
-  margin: -20px 0 0 0;
-  transition: 2s;
+  margin-top: -25px;
+  transition: .3s;
+  font-size: 2em;
+
 }
 
 .footer {
-  background: url(images/contact_images/footer_back.jpg) repeat-x;
-  center top;
+  background: url(images/contact_images/footer_back.jpg) repeat-x center top;
   background-size: contain;
   padding: 20px 0 50px 0;
   margin: -10px 0 8px 0;
@@ -847,7 +850,8 @@ option #course1a, option #course2a {
 
 .footer-text {
   text-align: center;
-  margin: 20px 0 8px 0;
+  margin: 6px 0 0px 0;
+  padding-bottom: 6px;
 }
 
 @media screen and (min-width: 400px) {
@@ -966,22 +970,29 @@ option #course1a, option #course2a {
 }
 
 @media screen and (min-width: 495px) {
-  .emded1 {
+
+  .videoTitle {
+    top: 5px;
+    left: 31.2%
+  }
+
+  .embed1 {
     height: 270px;
+    margin-top: 20px;
   }
   .vid-1-wrapper {
-    height: 380px;
+    height: 400px;
   }
   .video.one h3 {
-    margin-top: 130px;
+    margin-top: 150px;
   }
   .video.one h4 {
-    margin-top: 75px;
+    margin-top: 95px;
   }
   .view-top-img {
     margin-top: -25px;
   }
-  .emded2 {
+  .embed2 {
     height: 270px;
   }
   .vid-2-wrapper {
@@ -1076,20 +1087,26 @@ option #course1a, option #course2a {
     margin: 1% 5%;
     width: 91%
   }
-  .emded1 {
+
+  .videoTitle {
+    font-size: 2.2em;
+    top: 15px;
+    left: 39%;
+  }
+  .embed1 {
     height: 380px;
-    margin-top: 10px;
+    margin-top: 40px;
   }
   .vid-1-wrapper {
     height: 540px;
   }
   .video.one h3 {
-    margin-top: 265px;
+    margin-top: 285px;
   }
   .video.one h4 {
-    margin-top: 215px;
+    margin-top: 235px;
   }
-  .emded2 {
+  .embed2 {
     height: 380px;
     margin-top: 160px;
   }
@@ -1102,12 +1119,14 @@ option #course1a, option #course2a {
   .video.two h4 {
     margin-top: 335px;
   }
+
 }
 
 @media screen and (min-width: 1030px) {
-  .learn_section, .video.one, .video.two, .event_section, .contact_section {
+  .learn_section {
     display: none;
   }
+
   /* this is the top smoke image */
   /* header .header1-img {
     background-size: cover;
@@ -1124,6 +1143,7 @@ option #course1a, option #course2a {
     height: 40px;
     top: 0;
   }
+  /* nav */
   nav {
     top: 0;
   }
@@ -1144,20 +1164,7 @@ option #course1a, option #course2a {
     top: 544px;
     height: 383px;
   }
-  /* phedo class for bottom blue bar */
-  .footer-text:after {
-    content: "";
-    display: block;
-    background: url("images/bottom_bar.png") repeat-x center -7px;
-    height: 80px;
-    background-color: #4b5a7e;
-    margin-top: -31px;
-  }
-  .footer-text {
-    margin-left: 500px;
-    margin-top: 65px;
-    bottom: -20px;
-  }
+
   /* this is the horse logo */
   h1::before {
     background: transparent url("images/side_img.png") no-repeat center 4px;
@@ -1193,10 +1200,74 @@ option #course1a, option #course2a {
     justify-content: space-between;
     width: 400px;
   }
+
+  /* video section 1 */
+.videoTitle{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 40%;
+  font-size: 3em;;
+}
+
+.video.one {
+    margin-top: 524px;
+}
+
+.embed1,
+.embed2 {
+  width: 85%;
+  height: 500px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.embed2 {
+  margin-top: 350px;
+}
+
+.vid-1-wrapper {
+  height: 680px;
+}
+
+.video.one h3 {
+  margin-top: 425px;
+}
+
+.video.one h4 {
+  margin-top: 375px;
+}
+
+.video.two h3 {
+  margin-top: 700px;
+}
+
+.video.two h4 {
+  margin-top: 658px;
+}
+
+.vid-2-wrapper {
+ background: url("images/course_images/vid-bac-2c.jpg") repeat-x bottom -40px center;
+}
+
+/* Events Section */
+.event_section {
+  margin-top: 320px;
+}
+
+/* Footer */
   .footer {
     background: none;
-    height: 330px;
+    height: 2px;
   }
+
+  .footer-text {
+    margin-top: -4px;
+    background-color: #074b92;
+    padding: 6px 0;
+  }
+
 }
 
 @media screen and (min-width: 1031px) {

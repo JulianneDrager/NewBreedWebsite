@@ -1,8 +1,12 @@
-// REMEMBER: MONTHS IN THE ARRAY ARE ONE MONTH AHEAD AKA JULY=6 AUGUST=7
+
 var events = [
-  {'Date': new Date(2020, 6, 7), 'Title': 'Event One'},
-  {'Date': new Date(2020, 6, 8), 'Title': 'Event Two', 'Link': 'https://garfield.com'},
-  {'Date': new Date(2020, 6, 27), 'Title': 'Event 3', 'Link': 'https:www.google.com.au/#q=anniversary+gifts'},
+  {'Date': new Date(2020, 8, 7), 'Title': 'Event One', //sunday
+  //  'Link': function flipCard(){
+  //   cardElement.classList.toggle("flipped");
+  // }
+} ,
+  {'Date': new Date(2020, 8, 6), 'Title': 'Event Two', 'Link': 'https://garfield.com'}, // monday
+  {'Date': new Date(2020, 8, 26), 'Title': 'Event 3', 'Link': 'https:www.google.com.au/#q=anniversary+gifts'}, //saturday
 ];
 
 var settings = {};
