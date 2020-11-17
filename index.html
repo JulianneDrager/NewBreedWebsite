@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="en-US">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta http-equiv="content-type" content="text/html" charset="utf-8">
@@ -17,6 +16,37 @@
 
 	<title>New Breeds</title>
 
+	<script type="text/javascript">
+
+function MM_validateForm() { //v4.0
+  if (document.getElementById) {
+	var i, p, q, nm, test, num, min, max, errors = '', args = MM_validateForm.arguments;
+	for (i = 0; i < (args.length - 2); i += 3) {
+	  test = args[i + 2]; val = document.getElementById(args[i]);
+	  if (val) {
+		nm = val.name; if ((val = val.value) != "") {
+		  if (test.indexOf('isEmail') != -1) {
+			p = val.indexOf('@');
+			if (p < 1 || p == (val.length - 1)) errors += '- ' + nm + ' must contain an e-mail address.\n';
+		  } else if (test != 'R') {
+			num = parseFloat(val);
+			if (isNaN(val)) errors += '- ' + nm + ' must contain a number.\n';
+			if (test.indexOf('inRange') != -1) {
+			  p = test.indexOf(':');
+			  min = test.substring(8, p); max = test.substring(p + 1);
+			  if (num < min || max < num) errors += '- ' + nm + ' must contain a number between ' + min + ' and ' + max + '.\n';
+			}
+		  }
+		} else if (test.charAt(0) == 'R') errors += '- ' + nm + ' is required.\n';
+	  }
+	} if (errors) alert('The following error(s) occurred:\n' + errors);
+	document.MM_returnValue = (errors == '');
+  }
+}
+
+</script>
+</style>
+
 </head>
 
 
@@ -26,24 +56,17 @@
 		<header class="section-home">
 			<div class="header1-img"></div>
 			<a class="main-logo" title="New Breed" href="index.html"></a>
-			<nav>
+			<nav id="navi">
 				<a class="mobile_menu" title="menu" href="#"></a>
+				<a id="navButton" href="#" style=>X</a>
 				<ul>
 					<li>
-						<a class="learn_nav" title="Learn" href="Classes.html">Learn</a>
+						<a href="index.html" class="learn_nav" title="Learn" >Home</a>
 						<ul>
-							<li class="class1_nav">
-								<a href="Classes.html" title="Class1">Class 1</a>
-							</li>
-							<li>
-								<a title="Class2" href="Classes.html">Class 2</a>
-							</li>
-							<!-- <li>
-								<a title="Class3" href="Classes.html">Class 3</a>
-							</li>
-							<li>
-								<a title="CLass4" href="Classes.html">Class 4</a>
-							</li> -->
+							<!-- <li class="class1_nav"><a title="Class1">Class 1</a></li>
+							<li><a title="Class2" href="Classes.html">Class 2</a></li> -->
+							<!-- <li><a title="Class3" href="Classes.html">Class 3</a></li>
+							<li><a title="CLass4" href="Classes.html">Class 4</a></li> -->
 						</ul>
 					</li>
 
@@ -54,23 +77,13 @@
 					<li>
 						<a class="follow_nav" title="Follow" href="#">Follow</a>
 						<ul>
-							<li class="instagram_nav">
-								<a title="Instagram" href="#">Instagram</a>
-							</li>
-							<li>
-								<a title="Twitter" href="#">Twitter</a>
-							</li>
-							<li>
-								<a title="Youtube" href="#">Youtube</a>
-							</li>
-							<li>
-								<a title="Facebook" href="#">Facebook</a>
-							</li>
+							<li class="instagram_nav"><a title="Instagram" href="https://www.instagram.com/iamdanielmccormick/?hl=en" target="blank">Instagram</a></li>
+							<li><a title="Youtube" href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" target="blank">Youtube</a></li>
+							<li><a title="Facebook" href="https://www.facebook.com/IAmDanielMcCormick/" target="blank">Facebook</a></li>
 						</ul>
 					</li>
-					<li>
-						<a class="contact_nav" title="Contact" href="#contactSection">Contact</a>
-					</li>
+
+					<li><a class="contact_nav" title="Contact" href="#contactSection">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -83,28 +96,29 @@
 				<div class="header1-img2"></div>
 			</div>
 			<div class="buttons">
-				<a href="Classes.html"><button class="learn">Learn</button></a>
-				<button class="events">Events</button>
-				<button class="contact">Contact</button>
+
+				<a href="index.html"><button class="myButton">Home</button></a>
+				<a href="#eventSection"><button class="myButton">Events</button></a>
+				<a href="#contactSection"><button class="myButton">Contact</button></a>
 			</div>
 			<div class="social-links">
-				<button class="is"></button>
-				<button class="fb"></button>
-				<button class="you"></button>
-				<button class="tw"></button>
+				<a href="https://www.instagram.com/iamdanielmccormick/?hl=en" target="blank"><button class="is" style="margin-right:15px"></button></a>
+				<a href="https://www.facebook.com/IAmDanielMcCormick/" target="blank"><button  class="fb" style="margin-right:15px"></button></a>
+				<a href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" target="blank"><button class="you"></button></a>
+				
 			</div>
 		</section>
 
 		<!--section block with title an course buttons-->
 		<section class="learn_section">
 			<div class="yellow-line1"></div>
-			<h2><span style="padding-left:10px;" class="bold">Online</span> School</h2>
-			<div class="buttons-class">
+			<h2><span style="padding-left:10px;" class="bold">Burning</span> For Jesus!</h2>
+			<!-- <div class="buttons-class">
 				<button class="course1">Class1</button>
 				<button class="course2">Class2</button>
 				<button class="course3">Class3</button>
 				<button class="course4">Class4</button>
-			</div>
+			</div> -->
 		</section>
 
 
@@ -121,7 +135,7 @@
 				<h3>You’re the Movement Revival is Here</h3>
 				<h4><em>Daniel in Phoenix Arizona at Gods Living Room.</em></h4><br>
 			</div>
-			<div class="view-top-img"><button class="view-more">view more</button></div>
+			<div id="viewMore" class="view-top-img" onclick="alert('Comming Soon!');"><button class="view-more">view more</button></div>
 		</section>
 
 		<!--section block for second video-->
@@ -138,6 +152,41 @@
 						revival.</em></h4><br>
 			</div>
 		</section>
+
+		<!-- <section class="container">
+			<div class="full-view"></div>
+			<div class="preview-list">
+				<ul>
+					<li>
+						<input type="radio" id="tab-1" name="gallery-group">
+						<label for="tab-1">
+							<div class="tab">
+								<img
+									src="images/revival1.jpg"/>
+							</div>
+						</label>
+						<div class="content">
+							<img
+							src="images/revival1.jpg"/> />
+						</div>
+					</li>
+
+					<li>
+						<input type="radio" id="tab-2" name="gallery-group">
+						<label for="tab-2">
+							<div class="tab">
+								<img
+									src="images/revival2.jpg" />
+							</div>
+						</label>
+						<div class="content">
+							<img
+								src="images/revival1.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section> -->
 
 		<!--section block for Calander Events-->
 		<section id="eventSection" class="event_section">
@@ -165,9 +214,9 @@
 						<div class="back">
 							<div class="contentback">
 								<div class="backcontainer">
-									<div id="sunday">Sunday News!</div>
-									<div id="monday">Monday News!</div>
-									<div id="saturday">Saturday News!</div>
+									<div style="text-align: center;" id="sunday"> Sunday's Events <br> Comming Soon!</div>
+									<div style="text-align: center;" id="monday">Monday's Events <br> Comming Soon!</div>
+									<div style="text-align: center;" id="saturday">Saturday's Events <br> Comming Soon!</div>
 									<div class="backButton"><a>Return to Calander</a></div>
 								</div>
 							</div>
@@ -184,24 +233,45 @@
 		<section id="contactSection" class="contact_section">
 			<h2 class="contactme"><span class="bold">Contact</span> Me</h2>
 			<div class="contact_container">
-				<form id="contactform" autocomplete="on" title="Contact">
-					<input name="First Name" type="text" id="firstname" form="contact" placeholder="First Name"
-						title="First Name">
-					<input name="Last Name" type="text" id="lastname" form="contact" placeholder="Last Name "
-						title="Last Name">
-					<input name="Email" type="email" id="email" form="contact" placeholder="Email" title="Email">
+				<form action="send_form.php" 
+					  method="post" 
+					  name="Form_1" 
+					  id="Form_1" 
+					  autocomplete="on" title="Contact"
+					  onsubmit="return Form1_Validator(this)">
+
+					  <!-- First Name Field -->
+					<input name="first" id="first" type="text" placeholder="First Name" class="firstname"
+						   onsubmit = "return(validate());">
+					 
+					 <!-- Last Name Field -->
+					<input name="last" id="last" type="text" placeholder="Last Name" class="lastname"
+						   required="Yes" message="Last Name is Required">
+					
+				     <!-- Email Name Field -->
+					<input name="email"  id="email"type="text" placeholder="Email"
+						   required="Yes"
+						   message="Email Address is Required">
 
 					<!--Course selection drop down menu-->
-					<label for="classes" name="course selection">
+					<!-- <label for="classes" name="selection" id="selection">
 						<div class="choose">Select an Online Course Below</div>
 					</label>
-					<select id="course" name="course selection">
-						<option id="course1a" value="course1">Online Course 1</option>
-						<option id="course2a" value="course2">Online Course 2</option>
-					</select>
+					<select id="selections" name="selections" class="choose" >
+						<option name="course1a" value="course1" id="course">Online Course 1</option>
+						<option mame="course2a" value="course2">Online Course 2</option>
+					</select> -->
 
-					<textarea id="textarea" placeholder="Comments Section " title="Comments "></textarea>
-					<div class="submit_container"><input id="sub" type="submit" name="submit_form" value="Submit"></div>
+					 <!-- Comments Field -->
+					<textarea name="textarea" id="textarea" placeholder="Comments Section"></textarea>
+
+					 <!-- Submit Field -->
+					<div class="submit_container">
+						<input id="sub" name="sub" type="submit"
+						onclick="MM_validateForm('first','','R','last','','R','email','','RisEmail');
+						return document.MM_returnValue"
+						value="Submit"/>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -217,3 +287,39 @@
 
 
 </html>
+
+
+<script>
+
+	var navigation = document.getElementById("navi");
+	var naviButton = document.getElementById("navButton");
+	var toggle = false;
+	// var view = document.getElementById("viewMore");
+
+
+
+	navigation.addEventListener("click", openNav);
+	function openNav() {
+		if (toggle === true) {
+			navigation.style.display = "hidden";
+			navigation.style.overflow = "hidden";
+			toggle = false;
+		} else  {
+			navigation.style.overflow = "visible";
+			naviButton.style.display = "block";
+			toggle = true;
+		 } //else {
+		// 	naviButton.style.display = "block";
+		// }
+		
+		// naviButton.style.display = "none";
+	}
+
+// 	view.addEventListener("click", viwMr);
+// 	function viwMr() {
+
+// 	alert('Comming Soon');
+// }
+
+
+</script>

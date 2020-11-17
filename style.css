@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 23px;
 }
 
 h3 {
@@ -36,7 +36,7 @@ p {
 /*page*/
 
 #page {
-  max-width: 1510px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -77,7 +77,7 @@ header.section-home a.main-logo {
 }
 
 nav {
-  position: relative;
+  /* position: relative; */
   padding: 70px 0 0 0;
   background-color: rgba(12, 12, 12, 0.5);
   height: 0px;
@@ -100,6 +100,7 @@ nav ul {
   list-style: inherit;
   margin: 0;
   padding: 0;
+  background:  rgba(12, 12, 12, 0.5);
 }
 
 nav ul li:hover {
@@ -131,7 +132,7 @@ nav ul li a:hover {
 }
 
 nav ul ul {
-  background-color: rgba(12, 12, 12, 0.8);
+  background-color: rgb(19 18 18 / 91%);
 }
 
 nav ul ul li {
@@ -174,7 +175,7 @@ a:hover.events_nav, a:hover.contact_nav, a:hover.learn_nav, a:hover.follow_nav {
 header .header1-img {
   width: 100%;
   height: 300px;
-  background: url("images/home_images/home_back_1.jpg") repeat-x;
+  background: url("images/home_web/small/top_back_exsmall.jpg") repeat-x;
   background-size: contain;
   position: absolute;
   z-index: -1;
@@ -185,7 +186,7 @@ header .header1-img {
 .nb div.header1-img2 {
   width: 100%;
   height: 300px;
-  background: url("images/home_images/home_back_2c.png") repeat-x center top;
+  background: url("images/home_web/small/bottom_back.png") repeat-x center top;
   position: absolute;
   z-index: -2;
   top: 305px;
@@ -345,7 +346,7 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 }
 
 .course1:hover, .course2:hover, .course3:hover, .course4:hover, .course1:active, .course2:active, .course3:active, .course4:active {
-  background: linear-gradient(90deg, rgba(42, 103, 145, 0) 0%, rgba(51, 127, 172, 1) 77%, rgba(54, 135, 180, 2) 100%);
+  background: linear-gradient(-90deg, rgba(42, 103, 145, 0) 0%, rgba(51, 127, 172, 1) 77%, rgba(54, 135, 180, 2) 100%);
   opacity: 10;
   transition: 0.3s;
   color: white;
@@ -368,14 +369,17 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 .videoTitle {
   position: absolute;
   z-index: 1;
+  left: 25%;
+  top: 10px;
 }
 
 .video1-img {
-  background: url("images/course_images/vid-bac-1e.jpg") repeat-x top center;
+  background: url("images/course_web/small/video_back_small.jpg") repeat-x top center;
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 172px;
+  border-top: 7px solid #519c9f;
 }
 
 .video.one {
@@ -385,16 +389,16 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 
 .embed1 {
   width: 89.5%;
-  height: 20px;
+  height: 190px;
   position: absolute;
   z-index: 2;
   left: 5%;
-  top: 40px;
+  top: 65px;
   border: rgba(43, 63, 126, 1.00) solid thin;
 }
 
 .vid-1-wrapper {
-  background: url("images/course_images/vid-bac-2d.jpg") repeat-x bottom center;
+  background: url("images/course_web/small/video_bottom_small.jpg") repeat-x center 155px;
   height: 330px;
   padding-top: 10px;
 }
@@ -402,7 +406,7 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 .video.one h3 {
   width: 100%;
   position: absolute;
-  top: 195px;
+  top: 215px;
   margin: 55px 0 5px 0;
   left: 0%;
   z-index: 2;
@@ -438,7 +442,7 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 
 .view-top-img {
   background: url("images/course_images/view-more-bac.png") repeat-x top center;
-  height: 350px;
+  height: 280px;
   margin-top: -29px;
 }
 
@@ -458,7 +462,7 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 }
 
 .vid-2-wrapper {
-  background: url("images/course_images/vid-bac-2c.jpg") repeat-x bottom center;
+  background: url("images/course_images/vid-bac-2c.jpg") repeat-x center 156px;
   height: 310px;
   position: relative;
   margin-top: -20px;
@@ -707,21 +711,21 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
   position: absolute;
   visibility: hidden;
   top: 50px;
-  left: 50px;
+  /* left: 50px; */
 }
 
 #monday {
   position: absolute;
   visibility: hidden;
   top: 60px;
-  left: 60px;
+  /* left: 60px; */
 }
 
 #saturday {
   position: absolute;
   visibility: hidden;
   top: 60px;
-  left: 60px;
+  /* left: 60px; */
 }
 
 .backButton a {
@@ -780,13 +784,13 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
   height: 50px;
 }
 
-#firstname, #lastname, #email, #textarea {
+.firstname, .lastname, #email, #textarea {
   width: 95%;
   background-color: rgba(0, 0, 0, 0.0);
   border-radius: 4px;
 }
 
-#firstname, #lastname, #email {
+.firstname, .lastname, #email {
   padding: 10px 4px;
   margin-bottom: 10px;
   color: #02336c;
@@ -794,10 +798,12 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 }
 
 .choose {
-  width: 95%;
-  padding: 0;
+  width: 96%;
+  padding: 10px 0;
   color: #02336c;
   font-weight: bold;
+  background-color: rgba(222, 222, 222, 0.5);
+  border-radius: 10px;
 }
 
 #course {
@@ -833,12 +839,11 @@ option #course1a, option #course2a {
 }
 
 #sub:hover {
-  color: #f5f1ed;
+  color: #6c0208;
   border-radius: 2px;
-  margin-top: -25px;
+  margin-top: -15px;
   transition: .3s;
   font-size: 2em;
-
 }
 
 .footer {
@@ -854,9 +859,141 @@ option #course1a, option #course2a {
   padding-bottom: 6px;
 }
 
+
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #e2e4e3 15%, #5c607d 100%);
+  background-color: #ededed;
+  border-radius: 26px;
+  border: 2px groove #c0b3b3;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 15px;
+  /* font-weight: bold; */
+  padding: 6px 20px;
+  margin: -5px 0 5px 5px;
+  
+  /* text-decoration: none; */
+  /* text-shadow: 0px 1px 0px #ffffff;*/
+}
+.myButton:hover {
+  background: linear-gradient(to top, #e2e4e3 15%, #5c607d 100%);
+  background-color:#dfdfdf;
+  color: #0a0a08;
+}
+
+  /* input:required {
+    border: 1px red;
+  } */
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#navButton {
+  float: right;
+  display: none;
+  padding: 6px 11px;
+  color: white; text-decoration: none
+}
+
+
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.tab {
+  width: calc(10vh + 8px);
+  height: calc(10vh + 8px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  z-index: 0;
+  transition: width 0.5s;
+}
+
+.tab img {
+  width: 10vh;
+  height: 10vh;
+  z-index: 10;
+  cursor: pointer;
+  clip-path: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  shape-outside: polygon(0% 50%, 15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%);
+  transition: width 0.5s;
+}
+
+[type=radio] {
+  display: none;   
+}
+
+.preview-list {
+  background: linear-gradient(
+      #021919,
+      #021919 var(--line-offset),
+      #efefef var(--line-offset)
+  );
+}
+
+.tab {
+  background: linear-gradient(
+      #efefef,
+      #efefef var(--line-offset),
+      #021919 var(--line-offset)
+  );
+}
+
+[type=radio]:checked ~ label ~ .content{
+  text-align: center;
+  z-index: 8;
+}
+
+
+[type=radio]:checked ~ label .tab{
+  width: 0;
+}
+
+.content {
+  position: absolute;
+  background: #021919;
+  top: 1vh;
+  left: 93px;
+  width: 84%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.content img {
+  height: auto;
+  width: 100vw;  
+} */
+
+
+
 @media screen and (min-width: 400px) {
   .small-logo {
     max-width: 418px;
+  }
+  .vid-1-wrapper {
+    background: url(images/course_web/small/video_bottom_small.jpg) repeat-x center 154px;
   }
 }
 
@@ -958,14 +1095,19 @@ option #course1a, option #course2a {
     background-color: rgba(0, 0, 0, 0.0);
   }
   .video1-img {
-    background-size: cover;
+    background: url('images/course_web/medium/video_back_medium.jpg') no-repeat center -30px;
+    background-size: 100%;
   }
   .video.one h3 {
     margin-top: 65px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
   }
   .video.two h4 {
     margin-top: 20px;
+  }
+
+  #navButton {
+    display: none !important;
   }
 }
 
@@ -976,15 +1118,21 @@ option #course1a, option #course2a {
     left: 31.2%
   }
 
+  header .header1-img {
+    background-image: url('images/home_web/medium/top_back_medium.jpg');
+    background-size: inherit;
+  }
+
   .embed1 {
     height: 270px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .vid-1-wrapper {
     height: 400px;
+    background: url(images/course_web/small/video_bottom_small.jpg) repeat-x center 227px;
   }
   .video.one h3 {
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .video.one h4 {
     margin-top: 95px;
@@ -998,6 +1146,7 @@ option #course1a, option #course2a {
   .vid-2-wrapper {
     margin-top: 190px;
     height: 350px;
+    background: url(images/course_images/vid-bac-2c.jpg) repeat-x center 197px;
   }
   .video.two h3 {
     margin-top: 105px;
@@ -1017,11 +1166,28 @@ option #course1a, option #course2a {
     font-size: 1.5em;
     padding-top: 32px;
   }
+
+  #sub:hover {
+    color: white;
+    border-radius: 2px;
+    margin-top: -25px;
+    transition: .3s;
+    font-size: 2em;
+  }
 }
 
 @media screen and (min-width: 605px) {
   .small-logo {
     margin-top: -70px;
+  }
+
+  header .header1-img {
+    background-image: url('images/home_web/large/top_back_large.jpg');
+    background-size: inherit;
+  }
+
+  #navButton {
+    display: none !important;
   }
 }
 
@@ -1037,7 +1203,7 @@ option #course1a, option #course2a {
     background-size: contain;
   }
   .nb div.header1-img2 {
-    background: transparent url("images/bottom_back.jpg") repeat-x center 15px;
+    background: transparent url("images/home_web/medium/bottom_back_medium.jpg") repeat-x center 34px;
     background-size: contain;
   }
   /* .section-title { padding-left: 100px; } */
@@ -1051,7 +1217,7 @@ option #course1a, option #course2a {
     content: "";
     display: block;
     float: left;
-    background: transparent url("images/side_img.png") no-repeat center -14px;
+    background: transparent url("images/home_web/medium/hourse_medium.png") no-repeat center -14px;
     background-size: contain;
     height: 558px;
     width: 440px;
@@ -1091,17 +1257,25 @@ option #course1a, option #course2a {
   .videoTitle {
     font-size: 2.2em;
     top: 15px;
-    left: 39%;
+    left: 37%;
   }
   .embed1 {
     height: 380px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .vid-1-wrapper {
     height: 540px;
+    background: url(images/course_web/small/video_bottom_small.jpg) repeat-x center 367px;
   }
+
+.video1-img {
+  background: url('images/course_web/small/video_bottom_small.jpg') repeat-x center -14px;
+  transform: rotate(-180deg);
+  border-bottom: 7px inset #7587b9;
+  border-top: none;
+}
   .video.one h3 {
-    margin-top: 285px;
+    margin-top: 270px;
   }
   .video.one h4 {
     margin-top: 235px;
@@ -1112,6 +1286,8 @@ option #course1a, option #course2a {
   }
   .vid-2-wrapper {
     height: 620px;
+    /* position: initial; */
+    background: url(images/course_images/vid-bac-2c.jpg) repeat-x center 465px;
   }
   .video.two h3 {
     margin-top: 375px;
@@ -1122,7 +1298,18 @@ option #course1a, option #course2a {
 
 }
 
+@media screen and (min-width: 1024px) {
+  .videoTitle {
+    left: 40%;
+  }
+}
+
 @media screen and (min-width: 1030px) {
+
+  #navButton {
+    display: none !important;
+  }
+
   .learn_section {
     display: none;
   }
@@ -1144,35 +1331,35 @@ option #course1a, option #course2a {
     top: 0;
   }
   /* nav */
-  nav {
+  /* nav {
     top: 0;
-  }
+  } */
   nav ul li a {
-    color: #607D8B;
+    color: white;
   }
   nav ul li a:hover {
     background-color: #4b5a7e;
 }
-  #page {
+  /* #page {
     margin-top: 0;
-  }
+  } */
   /* this is the blue smoke image at bottom */
   .nb div.header1-img2 {
     max-width: 1916px;
     background-size: cover;
-    background-repeat: no-repeat;
-    top: 544px;
+    background: url('images/home_web/large/bottom_back_large.jpg');
+    top: 403px;
     height: 383px;
   }
 
   /* this is the horse logo */
   h1::before {
-    background: transparent url("images/side_img.png") no-repeat center 4px;
+    background: transparent url("images/home_web/medium/hourse_medium.png") no-repeat center 4px;
     background-size: cover;
     width: 600px;
     height: 789px;
     left: 0px;
-    top: 198px;
+    top: 59px;
     z-index: 1;
   }
   /* this is the New Breed Title */
@@ -1187,13 +1374,18 @@ option #course1a, option #course2a {
     padding-top: 180px;
     top: 325px;
     max-width: 500px;
-    height: 100px;
+    height: 66px;
     border-top: #519c9f double 10px;
     border-bottom: #519c9f double 10px;
   }
   button.learn, button.events, button.contact {
     margin-left: 22px;
   }
+
+  .myButton{
+    margin-left: 26px;
+  }
+
   .social-links {
     right: 278px;
     top: 210px;
@@ -1212,7 +1404,7 @@ option #course1a, option #course2a {
 }
 
 .video.one {
-    margin-top: 524px;
+    margin-top: 384px;
 }
 
 .embed1,
@@ -1220,15 +1412,24 @@ option #course1a, option #course2a {
   width: 85%;
   height: 500px;
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .embed2 {
-  margin-top: 350px;
+  margin-top: 40px;
+}
+
+.video1-img {
+  background: url('images/course_web/small/video_bottom_small.jpg') repeat-x center 214px;
+  transform: rotate(-180deg);
+  height: 400px;
+  border-bottom: 7px inset #7587b9;
+  border-top: none;
 }
 
 .vid-1-wrapper {
   height: 680px;
+  background: url(images/course_web/small/video_bottom_small.jpg) repeat-x center 508px;
 }
 
 .video.one h3 {
@@ -1236,29 +1437,31 @@ option #course1a, option #course2a {
 }
 
 .video.one h4 {
-  margin-top: 375px;
+  margin-top: 347px;
 }
 
 .video.two h3 {
-  margin-top: 700px;
+  margin-top: 378px;
 }
 
 .video.two h4 {
-  margin-top: 658px;
+  margin-top: 338px;
 }
 
 .vid-2-wrapper {
- background: url("images/course_images/vid-bac-2c.jpg") repeat-x bottom -40px center;
+ /* background: url("images/course_web/small/video_bottom_small.jpg") repeat-x bottom 369px center;
+ position: initial; */
+ margin-top: 442px;
 }
 
 /* Events Section */
-.event_section {
+/* .event_section {
   margin-top: 320px;
-}
+} */
 
 /* Footer */
   .footer {
-    background: none;
+    /* background: none; */
     height: 2px;
   }
 
@@ -1282,18 +1485,22 @@ option #course1a, option #course2a {
     right: 80px;
     width: 450px;
   }
+
+  #navButton {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 1320px) {
   h1 {
-    padding-right: 48px;
+    padding-right: 5px;
     padding-top: 280px;
     font-size: 5em;
   }
   .buttons {
-    right: 140px;
+    right: 105px;
   }
   .social-links {
-    right: 167px;
+    right: 132px;
   }
 }

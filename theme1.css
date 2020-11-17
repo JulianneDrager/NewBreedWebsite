@@ -16,7 +16,7 @@
   .cld-datetime .today{
     position: relative;
     float: left;
-    width: 100%;/*calc(100% - 40px); */
+    width: calc(100% - 40px);
     margin: auto;
     text-align: center;
   }
