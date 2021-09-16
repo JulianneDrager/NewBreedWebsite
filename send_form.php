@@ -90,7 +90,7 @@ p a:hover {
          <canvas id="demo-canvas"></canvas>
          <h1 class="main-title"><span class="thin"><p>   
 Your request has been sent. Thank You! </p> <hr> 
-<a href=http://www.newbreedrising.org> Back to The NewBreed</a></h1>
+<a href=https://newbreedrising.org> Back to The NewBreed</a></h1>
       </div>
    </div>
 </div>
