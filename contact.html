@@ -11,7 +11,7 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 
-	<title>Events</title>
+	<title>Contact</title>
     <script type="text/javascript"></script>
 
 </style>
@@ -61,53 +61,44 @@
                 href="#">Give/Donate
                </a>
             </li>
+            
         </ul>
     </nav>
-</header>
-		<section id="eventSection" class="event_section">
-			<aside class="calander">
-				<div class="yellow-line2"></div>
-				<h2><span class="bold">Calendar</span> Events</h2>
-				<img class="chead" src="images/cal_images/cal-header-top-a.jpg" alt="calander header">
-				<h3 class="cal-header"></h3>
-				<div class="container">
-					<div class="card">
-						<div class="front">
-							<div class="contentfront">
-								<div class="month">
-									<div id="caleandar"></div>
-								</div>
-								<div id="date"></div>
-								<div id="day"></div>
-								<div id="month"></div>
-							</div>
-						</div>
-						<div class="back">
-							<div class="contentback">
-								<div class="backcontainer">
-									<div style="text-align: center;" id="sunday"> Sunday's Events <br> Comming Soon!</div>
-									<div style="text-align: center;" id="monday">Monday's Events <br> Comming Soon!</div>
-									<div style="text-align: center;" id="saturday">Saturday's Events <br> Comming Soon!</div>
-									<div class="backButton"><a>Return to Calander</a></div>
-								</div>
-							</div>
-						</div>
+</header>	
+ <section id="contactSection" class="contact_section">
+			<h2 class="contactme">
+                <span class="bold">Contact</span> Me</h2>
+			<div class="contact_container">
+				<form action="send_form.php" 
+					  method="post" 
+					  name="Form_1" 
+					  id="Form_1" 
+					  autocomplete="on" title="Contact"
+					  onsubmit="return Form1_Validator(this)">
+					<input name="first" id="first" type="text" placeholder="First Name" class="firstname"
+						   onsubmit = "return(validate());">
+					<input name="last" id="last" type="text" placeholder="Last Name" class="lastname"
+						   required="Yes" message="Last Name is Required">					
+					<input name="email"  id="email"type="text" placeholder="Email"
+						   required="Yes"
+						   message="Email Address is Required">
+					<textarea name="textarea" id="textarea" placeholder="Comments Section"></textarea>
+					<div class="submit_container">
+						<input id="sub" name="sub" type="submit"
+						onclick="MM_validateForm('first','','R','last','','R','email','','RisEmail');
+						return document.MM_returnValue"
+						value="Submit"/>
 					</div>
-				</div>
-			</aside>
-		</section>
+				</form>
+			</div>
+		</section> 
     </html>
 
-    <script src="js/caleandar.js"></script>
-<script async src="js/nb_calander.js"></script>
 <script>
-
 	var navigation = document.getElementById("navi");
 	var naviButton = document.getElementById("navButton");
 	var toggle = false;
 	// var view = document.getElementById("viewMore");
-
-
 
 	navigation.addEventListener("click", openNav);
 	function openNav() {

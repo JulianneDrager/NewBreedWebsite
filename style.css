@@ -750,8 +750,8 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 }
 
 .contact_section {
-  margin-top: 120px;
-  position: relative;
+  /* margin-top: 120px;
+  position: relative; */
 }
 
 /*.contact::after {content:'';  width: 0;
@@ -780,12 +780,13 @@ button.learn:hover, button.learn:active, button.events:hover, button.events:acti
 
 .submit_container {
   display: block;
-  background: url(images/contact_images/cloud.png) no-repeat;
+  background: url("images/course_images/view-more-bac.png") top 258px center;
+  height: 136px;
+  margin-top: 15px;
   background-size: 100%;
   padding: 15px 0;
   position: absolute;
   width: 100%;
-  height: 50px;
 }
 
 .firstname, .lastname, #email, #textarea {
@@ -823,31 +824,29 @@ option #course1a, option #course2a {
 }
 
 #textarea {
-  height: 80px;
+  height: 185px;
   color: #02336c;
   font-weight: bold;
   margin: 10px 0 0 0;
 }
 
 #sub {
-  color: #02336c;
+  color: #d4e2f1;
   font-weight: bold;
   font-size: 1em;
-  background-color: rgba(222, 222, 222, 0.0);
-  border: none;
-  border-radius: 2px;
+  background-color: #232227;
+  border: .5px solid #ccc;
+  border-radius: 12px;
   font-family: Oswald;
   font-weight: 600;
-  font-size: 1.2em;
-  margin-top: -20px;
+  font-size: 1.5em;
+  margin-top: 11px;
 }
 
 #sub:hover {
-  color: #6c0208;
-  border-radius: 2px;
-  margin-top: -15px;
+  color: #0e4a97;
   transition: .3s;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .footer-text {

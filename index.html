@@ -69,19 +69,41 @@ function MM_validateForm() { //v4.0
 					</li>
 
 					<li>
-						<a class="events_nav" title="Events" href="#eventSection">Events</a>
+						<a class="follow_nav" title="Follow" href="#">Follow</a>
+						<ul>
+							<li class="instagram_nav">
+								<a title="Instagram" 
+								href="https://www.instagram.com/iamdanielmccormick/?hl=en" 
+								target="blank">Instagram</a>
+							</li>
+							<li>
+								<a title="Youtube" 
+								href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" 
+								target="blank">Youtube</a>
+							</li>
+							<li>
+								<a title="Facebook" 
+								href="https://www.facebook.com/IAmDanielMcCormick/" 
+								target="blank">Facebook</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a class="events_nav" 
+						title="Events" 
+						href="#eventSection">Events</a>
 					</li>
 
 					<li>
-						<a class="follow_nav" title="Follow" href="#">Follow</a>
-						<ul>
-							<li class="instagram_nav"><a title="Instagram" href="https://www.instagram.com/iamdanielmccormick/?hl=en" target="blank">Instagram</a></li>
-							<li><a title="Youtube" href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" target="blank">Youtube</a></li>
-							<li><a title="Facebook" href="https://www.facebook.com/IAmDanielMcCormick/" target="blank">Facebook</a></li>
-						</ul>
+						<a class="contact_nav" 
+						title="Contact" 
+						href="#contactSection">Contact</a>
 					</li>
-
-					<li><a class="contact_nav" title="Contact" href="#contactSection">Contact</a></li>
+					<li>
+						<a class="events_nav" 
+						title="Give" href="#">Give/Donate</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -92,17 +114,24 @@ function MM_validateForm() { //v4.0
 				<img class="small-logo" src="images/home_images/logo/screen_logo_1a.png" alt="New Breed Logo" />
 				<h1><span class="bold">New</span> Breed
 					<div class="social-links">
-						<a href="https://www.instagram.com/iamdanielmccormick/?hl=en" target="blank"><button class="is" style="margin-right:15px"></button></a>
-						<a href="https://www.facebook.com/IAmDanielMcCormick/" target="blank"><button  class="fb" style="margin-right:15px"></button></a>
-						<a href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" target="blank"><button class="you"></button></a>
+						<a href="https://www.instagram.com/iamdanielmccormick/?hl=en" 
+						target="blank"><button class="is" style="margin-right:15px"></button></a>
+						<a href="https://www.facebook.com/IAmDanielMcCormick/" 
+						target="blank"><button  class="fb" style="margin-right:15px"></button></a>
+						<a href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" 
+						target="blank"><button class="you"></button></a>
 							
 					</div></h1>
 			</div>
 			<div class="buttons">
-				<a href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" ><button class="myButton">Go To Videos</button></a>
-				<a href="events.html"><button class="myButton">View Events</button></a>
-				<a href="#contactSection"><button class="myButton">Get In Contact</button></a>
-				<a href="#"><button class="myButton">Give/Donate</button></a>
+				<a href="https://www.youtube.com/channel/UCbnGIAHSm1FqgabInVohX1g" >
+					<button class="myButton">Go To Videos</button></a>
+				<a href="events.html">
+					<button class="myButton">View Events</button></a>
+				<a href="contact.html">
+					<button class="myButton">Get In Contact</button></a>
+				<a href="#">
+					<button class="myButton">Give/Donate</button></a>
 			</div>
 		</section>
 
@@ -186,44 +215,11 @@ function MM_validateForm() { //v4.0
 				</ul>
 			</div>
 		</section> -->
-
-		
-
-
-		<!-- <section id="contactSection" class="contact_section">
-			<h2 class="contactme"><span class="bold">Contact</span> Me</h2>
-			<div class="contact_container">
-				<form action="send_form.php" 
-					  method="post" 
-					  name="Form_1" 
-					  id="Form_1" 
-					  autocomplete="on" title="Contact"
-					  onsubmit="return Form1_Validator(this)">
-					<input name="first" id="first" type="text" placeholder="First Name" class="firstname"
-						   onsubmit = "return(validate());">
-					<input name="last" id="last" type="text" placeholder="Last Name" class="lastname"
-						   required="Yes" message="Last Name is Required">					
-					<input name="email"  id="email"type="text" placeholder="Email"
-						   required="Yes"
-						   message="Email Address is Required">
-					<textarea name="textarea" id="textarea" placeholder="Comments Section"></textarea>
-					<div class="submit_container">
-						<input id="sub" name="sub" type="submit"
-						onclick="MM_validateForm('first','','R','last','','R','email','','RisEmail');
-						return document.MM_returnValue"
-						value="Submit"/>
-					</div>
-				</form>
-			</div>
-		</section> -->
 		<div class="header1-img2"></div>
 	</div>
-
 		<footer>
 		<div class="footer-text">&copy; NewBreedRisingWebsite 2020</div>
         </footer>
-		
-
 	</div> <!-- end #page -->
 </body>
 
@@ -247,10 +243,12 @@ function MM_validateForm() { //v4.0
 		if (toggle === true) {
 			navigation.style.display = "hidden";
 			navigation.style.overflow = "hidden";
+			navigation.style.marginBottom = "0";
 			toggle = false;
 		} else  {
 			navigation.style.overflow = "visible";
 			naviButton.style.display = "block";
+			navigation.style.marginBottom = "18rem";
 			toggle = true;
 		 } //else {
 		// 	naviButton.style.display = "block";

@@ -1,12 +1,12 @@
-
+//note: month is one number behind (september = 8)
 var events = [
-  {'Date': new Date(2020, 10, 16), 'Title': 'Event One', //monday
+  {'Date': new Date(2021, 8, 6), 'Title': 'Event One', //monday
   //  'Link': function flipCard(){
   //   cardElement.classList.toggle("flipped");
   // }
 } ,
-  {'Date': new Date(2020, 10, 7), 'Title': 'Event Two', 'Link': 'https://garfield.com'}, // saturday
-  {'Date': new Date(2020, 10, 8), 'Title': 'Event 3', 'Link': 'https:www.google.com.au/#q=anniversary+gifts'}, //sunday
+  {'Date': new Date(2021, 8, 5), 'Title': 'Event Two', 'Link': '#'}, // Sunday
+  {'Date': new Date(2021, 8, 25), 'Title': 'Event 3', 'Link': '#'}, //saturday
 ];
 
 var settings = {};
