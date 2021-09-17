@@ -1028,7 +1028,7 @@ ul {
     position: absolute;
     top: -33px;
     right: 12px;
-    width: 480px;
+    width: 496px;
     overflow: visible;
   }
   nav a.mobile_menu {
@@ -1178,6 +1178,41 @@ ul {
   }
 }
 
+/* Asus Nexus */
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .wrapper {
+    min-height: 93.3vh;
+}
+}
+
+/* Samsung Galaxy Tab */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .myButton {
+    width: 28.2rem;
+}
+
+h1 {
+  font-size: 5.5em;
+}
+
+ .small-logo {
+   margin-top: 0;
+   height: 14rem;
+ }
+
+ .wrapper {
+  min-height: 94.3vh;
+}
+}
+
+/* Asus Nexus 7 */
+@media screen and (min-width: 604px) and (max-width: 966px) {
+  .myButton {
+    max-width: 28rem;
+}
+}
+
 @media screen and (min-width: 605px) {
   .small-logo {
     margin-top: -70px;
@@ -1195,11 +1230,41 @@ ul {
 
 @media screen and (min-width: 640px) {
   nav {
-    width: 380px;
+    width: 497px;
   }
 }
 
+/* Samsung Galaxy Tab */
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+
+  .myButton {
+    width: 28.2rem;
+}
+
+h1 {
+  font-size: 5.5em;
+}
+
+ .small-logo {
+   margin-top: 0;
+   height: 14rem;
+ }
+
+ .wrapper {
+  min-height: 95.3vh;
+}
+}
+
 @media screen and (min-width: 730px) {
+  .wrapper {
+    min-height: 66.5vh;
+    z-index: 3;
+  }
+
+  .myButton {
+   width: 44vw;
+  }
+
   header .header1-img {
     background: transparent url("images/top_back.jpg") repeat-x top;
     background-size: contain;
@@ -1219,22 +1284,24 @@ ul {
     content: "";
     display: block;
     float: left;
-    background: transparent url("images/home_web/medium/hourse_medium.png") no-repeat center -14px;
+    background: transparent url("images/home_web/medium/hourse_medium.png") no-repeat center 24px;
     background-size: contain;
-    height: 558px;
-    width: 440px;
+    height: 592px;
+    width: 533px;
     margin-top: -62px;
     left: 0;
     position: absolute;
     z-index: -1
   }
+
   h1 {
     padding-top: 100px;
+    font-size: 2.5em;
   }
   .buttons {
     position: absolute;
     right: 0;
-    top: 255px;
+    top: 335px;
     max-width: 360px;
   }
   .small-logo {
@@ -1243,11 +1310,11 @@ ul {
   .social-links {
     position: absolute;
     right: 78px;
-    top: 320px;
+    top: 237px;
     display: flex;
     justify-content: flex-end;
   }
-  .course1, .course2, .course3, .course4 {
+  /* .course1, .course2, .course3, .course4 {
     background-color: #519c9f;
     color: black;
     font: bold 1.2em Oswald;
@@ -1270,12 +1337,12 @@ ul {
     background: url(images/course_web/small/video_bottom_small.jpg) repeat-x center 367px;
   }
 
-.video1-img {
-  background: url('images/course_web/small/video_bottom_small.jpg') repeat-x center -14px;
-  transform: rotate(-180deg);
-  border-bottom: 7px inset #7587b9;
-  border-top: none;
-}
+  .video1-img {
+    background: url('images/course_web/small/video_bottom_small.jpg') repeat-x center -14px;
+    transform: rotate(-180deg);
+    border-bottom: 7px inset #7587b9;
+    border-top: none;
+  }
   .video.one h3 {
     margin-top: 270px;
   }
@@ -1288,7 +1355,7 @@ ul {
   }
   .vid-2-wrapper {
     height: 620px;
-    /* position: initial; */
+    position: initial; 
     background: url(images/course_images/vid-bac-2c.jpg) repeat-x center 465px;
   }
   .video.two h3 {
@@ -1296,14 +1363,128 @@ ul {
   }
   .video.two h4 {
     margin-top: 335px;
-  }
+  } */
 
+}
+
+/* apple ipad pro */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    min-height: 93.9vh;
+}
+
+h1 {
+  font-size: 2.9em;
+}
+
+h1::before {
+  height: 749px;
+  width: 705px;
+  margin-top: 71px;
+}
+
+.myButton {
+  width: 22.4rem;
+}
+
+.buttons {
+  right: 29px;
+}
+
+.social-links {
+  right: 110px;
+}
+
+}
+
+/* apple ipad pro */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .wrapper {
+    min-height: 94.7vh;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-right: 1.9rem;
+}
+
+.myButton {
+  width: 22.4rem;
+}
+
+.buttons {
+  right: 90px;
+}
+
+.social-links {
+  right: 172px;
+}
+
+}
+
+/* samsung tablet */
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .wrapper {
+    min-height: 93.3vh;
+}
+
+  h1::before {
+    height: 978px;
+    width: 896px;
+    margin-top: 66px;
+}
 }
 
 @media screen and (min-width: 1024px) {
   .videoTitle {
     left: 40%;
   }
+
+  h1::before {
+    height: 1024px;
+    width: 884px;
+}
+
+  .wrapper {
+    min-height: 81.2vh;
+  }
+
+  .myButton {
+    width: 35vw;
+ }
+
+  .buttons {
+    right: 25px;
+  }
+
+  .social-links {
+    right: 107px;
+}
+
+h1 {
+  font-size: 3em;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .wrapper {
+    min-height: 95.9vh;
+}
+
+  h1::before {
+    background-size: contain;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .wrapper {
+    min-height: 95.9vh;
+}
+
+  h1::before {
+    height: 1093px;
+    width: 1004px;
+}
 }
 
 @media screen and (min-width: 1030px) {
@@ -1469,7 +1650,7 @@ ul {
 
   .footer-text {
     margin-top: -4px;
-    background-color: #074b92;
+    background-color: black;
     padding: 6px 0;
   }
 
@@ -1495,14 +1676,35 @@ ul {
 
 @media screen and (min-width: 1320px) {
   h1 {
-    padding-right: 5px;
-    padding-top: 280px;
-    font-size: 5em;
+    padding-right: 1px;
+    padding-top: 256px;
+    font-size: 4.1em;
+    margin-top: -141px;
   }
+
+  h1::before {
+    width: 915px;
+    height: 1044px;
+}
+
+  .myButton {
+    max-width: 27rem;
+    margin :3px 0 0 0;
+  }
+
   .buttons {
-    right: 105px;
+    right: 42px;
+    padding-top: 0;
+    height: 160px;
+    top: 389px;
   }
   .social-links {
-    right: 132px;
+    right: 74px;
+    top: 289px;
+  }
+  .footer-text {
+    background-color: black;
+    margin-top: 0;
+    padding-left: 50px;
   }
 }
