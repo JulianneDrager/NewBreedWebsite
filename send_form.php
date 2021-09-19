@@ -1,4 +1,4 @@
-<?
+<?php
         $from_name 	= $_POST['first'];
 		$from_email = $_POST['email'];
 		$to_name 	= "Recipent of NewBreedRising";
@@ -25,8 +25,8 @@
 		$message .= "<tr><td align=left>First Name:</td><td align=left>".$_POST['first']."</td></tr>";
 		$message .= "<tr><td align=left>Last Name:</td><td align=left>".$_POST['last']."</td></tr>";
         $message .= "<tr><td align=left>Email:</td><td align=left>".$_POST['email']."</td></tr>";
-        $message .= "<tr><td align=left>Event type Online Course Choice:</td><td align=left>".$_POST['course1a']."</td></tr>";
-        $message .= "<tr><td align=left>Event type Online Course Choice:</td><td align=left>".$_POST['course2a']."</td></tr>";	
+        // $message .= "<tr><td align=left>Event type Online Course Choice:</td><td align=left>".$_POST['course1a']."</td></tr>";
+        // $message .= "<tr><td align=left>Event type Online Course Choice:</td><td align=left>".$_POST['course2a']."</td></tr>";	
         $message .= "<tr><td align=left>Comments: </td><td align=left>".$_POST['textarea']."</td></tr>";
 
         // $message .= "<tr><td align=left>Phone:</td><td align=left>".$_POST['phone']."</td></tr>";
@@ -100,3 +100,5 @@ Your request has been sent. Thank You! </p> <hr>
 
 </body>
 </html>
+
+

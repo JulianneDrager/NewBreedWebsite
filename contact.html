@@ -17,6 +17,9 @@
 </style>
 
 </head>
+<body>
+	<div id="page">
+        <div class="wrapper">
 <!--Header block w/smoke & nav above-->
 <header class="section-home">
     <div class="header1-img"></div>
@@ -25,6 +28,9 @@
         <a class="mobile_menu" title="menu" href="#"></a>
         <a id="navButton" href="#" style=>X</a>
         <ul>
+            <li>
+                <a href="index.html" class="learn_nav" title="Learn" >Home</a>
+            </li>
             <li>
                 <a class="follow_nav" title="Follow" href="#">Follow</a>
                 <ul>
@@ -51,8 +57,8 @@
 
             <li>
                 <a class="contact_nav" 
-                title="Contact" 
-                href="#contactSection">Contact
+                title="Events" 
+                href="events.html">Events
                </a>
             </li>
             <li>
@@ -66,13 +72,10 @@
     </nav>
 </header>	
  <section id="contactSection" class="contact_section">
-			<h2 class="contactme">
-                <span class="bold">Contact</span> Me</h2>
+			<h2 class="contactme"><b>Contact</b> Me</h2>
 			<div class="contact_container">
-				<form action="send_form.php" 
-					  method="post" 
-					  name="Form_1" 
-					  id="Form_1" 
+				<form action="contact_send.php" 
+					  method="POST" 
 					  autocomplete="on" title="Contact"
 					  onsubmit="return Form1_Validator(this)">
 					<input name="first" id="first" type="text" placeholder="First Name" class="firstname"
@@ -91,7 +94,14 @@
 					</div>
 				</form>
 			</div>
+        </div>            
+              <div class="footer">
+                <div class="footer-text">&copy; NewBreedRisingWebsite 2020</div>
+                </div>
 		</section> 
+        </div>
+        </div>
+        </body>
     </html>
 
 <script>
