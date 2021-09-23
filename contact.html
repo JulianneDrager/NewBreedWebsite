@@ -64,7 +64,7 @@
             <li>
                 <a class="contact_nav" 
                 title="Give" 
-                href="#">Give/Donate
+                href="give.html">Give/Donate
                </a>
             </li>
             
@@ -78,11 +78,11 @@
 					  method="POST" 
 					  autocomplete="on" title="Contact"
 					  onsubmit="return Form1_Validator(this)">
-					<input name="first" id="first" type="text" placeholder="First Name" class="firstname"
-						   onsubmit = "return(validate());">
-					<input name="last" id="last" type="text" placeholder="Last Name" class="lastname"
-						   required="Yes" message="Last Name is Required">					
-					<input name="email"  id="email"type="text" placeholder="Email"
+					<input name="first" id="first" type="text" minlength="3" placeholder="First Name" class="firstname"
+                           required="Yes" message="First Name is Required" onsubmit = "return(validate());">
+					<input name="last" id="last" type="text" minlength="3" placeholder="Last Name" class="lastname"
+						   >					
+					<input name="email"  id="email" type="email" size="32" minlength="3" maxlength="64" placeholder="Email"
 						   required="Yes"
 						   message="Email Address is Required">
 					<textarea name="textarea" id="textarea" placeholder="Comments Section"></textarea>
